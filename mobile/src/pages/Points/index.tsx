@@ -42,7 +42,6 @@ const Points = () => {
 
 
   useEffect(() => {
-    console.log('dentro do effect de points: ' + selectedItems);
     api.get('points', {
       params: {
         city: 'Vitória', //routeParams.city
