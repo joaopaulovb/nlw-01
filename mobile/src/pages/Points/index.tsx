@@ -44,8 +44,8 @@ const Points = () => {
   useEffect(() => {
     api.get('points', {
       params: {
-        city: 'Vitória', //routeParams.city
-        state: 'ES', //routeParams.state
+        city: routeParams.city,
+        state: routeParams.state,
         items: selectedItems.join(',')
       }      
     }).then(response => {
